@@ -3,7 +3,6 @@ package Utilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
@@ -13,7 +12,7 @@ import java.net.URL;
 
 public class DriverAppium {
 
-    public AppiumDriver<WebElement> driver;
+    public AppiumDriver<MobileElement> driver;
 
     @BeforeTest
     public void setUp() {
@@ -30,7 +29,7 @@ public class DriverAppium {
 
             URL url = new URL("http://127.0.0.1:4723/wd/hub");
 
-            driver = new AppiumDriver<WebElement>(url, caps);
+            driver = new AppiumDriver<MobileElement>(url, caps);
 
         } catch (Exception e) {
             print("Hata kaynağı : " + e.getCause());

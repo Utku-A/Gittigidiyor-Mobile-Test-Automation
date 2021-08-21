@@ -1,11 +1,11 @@
 package PageObjectModel;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class ProductDetailPage extends BasePage {
-    public ProductDetailPage(AppiumDriver<WebElement> driver){
+    public ProductDetailPage(AppiumDriver<MobileElement> driver){
         super(driver);
     }
 

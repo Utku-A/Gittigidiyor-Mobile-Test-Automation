@@ -1,19 +1,13 @@
 package PageObjectModel;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidTouchAction;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-import java.time.Duration;
 
 public class IndexPage extends BasePage{
-    public IndexPage(AppiumDriver<WebElement> driver){
+    public IndexPage(AppiumDriver<MobileElement> driver){
         super(driver);
     }
 

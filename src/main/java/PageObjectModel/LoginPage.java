@@ -1,12 +1,12 @@
 package PageObjectModel;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage{
-    public LoginPage(AppiumDriver<WebElement> driver) {
+    public LoginPage(AppiumDriver<MobileElement> driver) {
         super(driver);
     }
 

@@ -12,32 +12,12 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <appiumJavaClient.version>7.5.1</appiumJavaClient.version>
-        <cucumber.versions>6.11.0</cucumber.versions>
         <selenium.version>3.141.59</selenium.version>
         <junit.version>4.13.2</junit.version>
         <testng.version>7.4.0</testng.version>
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.versions}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.versions}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.versions}</version>
-        </dependency>
 
         <dependency>
             <groupId>io.appium</groupId>

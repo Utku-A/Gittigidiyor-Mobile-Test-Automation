@@ -2,12 +2,12 @@ package PageObjectModel;
 
 import Utilities.DriverAppium;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -15,16 +15,16 @@ import java.time.Duration;
 
 public class BasePage extends DriverAppium {
 
-    public BasePage(AppiumDriver<WebElement> driver){
+    public BasePage(AppiumDriver<MobileElement> driver){
         this.driver = driver;
     }
 
 
-    public WebElement find(By locator) {
+    public MobileElement find(By locator) {
         return driver.findElement(locator);
     }
 
-    public WebElement finds(By locator,int select) {
+    public MobileElement finds(By locator,int select) {
         return driver.findElements(locator).get(select);
     }
 

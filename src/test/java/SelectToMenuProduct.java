@@ -12,7 +12,7 @@ public class SelectToMenuProduct extends DriverAppium {
 
     @Test
     public void TS003() {
-        url("gittigidiyor.com");
+        url("index");
         indexPage = new IndexPage(driver);
         searchProductPage = new SearchProductPage(driver);
         productDetailPage = new ProductDetailPage(driver);

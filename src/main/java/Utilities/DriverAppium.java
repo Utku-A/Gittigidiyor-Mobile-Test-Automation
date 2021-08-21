@@ -9,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.net.URL;
+import java.util.Objects;
 
 public class DriverAppium {
 
@@ -49,6 +50,11 @@ public class DriverAppium {
     }
 
     public void url(String site) {
+        if (Objects.equals(site, "index")) {
+            site = "gittigidiyor.com";
+        }else if (Objects.equals(site, "login")) {
+            site = "gittigidiyor.com/uye-girisi?s=1";
+        }
         driver.get("https://www."+site);
     }
 

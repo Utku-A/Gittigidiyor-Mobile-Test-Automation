@@ -17,7 +17,7 @@ public class AddToCardProduct_Test extends DriverAppium {
     @Order(1)
     @Test
     public void TS001() {
-        url("gittigidiyor.com");
+        url("index");
         indexPage = new IndexPage(driver);
         searchProductPage = new SearchProductPage(driver);
         productDetailPage = new ProductDetailPage(driver);
@@ -39,7 +39,7 @@ public class AddToCardProduct_Test extends DriverAppium {
     @Order(2)
     @Test
     public void TS002() {
-        url("gittigidiyor.com/uye-girisi?s=1");
+        url("login");
         loginPage = new LoginPage(driver);
 
         loginPage

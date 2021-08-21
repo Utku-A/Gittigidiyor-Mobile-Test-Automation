@@ -6,7 +6,7 @@
 
 **Used tools** : Selenium Web Driver, Appium, TestNG, Maven
 
-## Installation Android
+## Installation For Android
 - Appium for desktop
 - Android SDK, Android Studio or
 - Path ("JAVA_HOME" "ANDROID_HOME")
